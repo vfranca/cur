@@ -16,22 +16,22 @@ from hkd import hkd
 
 
 @click.group()
-def cu():
+def cur():
     """Converte moedas"""
     pass
 
 
-cu.add_command(usd)
-cu.add_command(eur)
-cu.add_command(gbp)
-cu.add_command(chf)
-cu.add_command(jpy)
-cu.add_command(cad)
-cu.add_command(aud)
-cu.add_command(nzd)
-cu.add_command(brl)
-cu.add_command(hkd)
+cur.add_command(usd)
+cur.add_command(eur)
+cur.add_command(gbp)
+cur.add_command(chf)
+cur.add_command(jpy)
+cur.add_command(cad)
+cur.add_command(aud)
+cur.add_command(nzd)
+cur.add_command(brl)
+cur.add_command(hkd)
 
 
 if __name__ == "__main__":
-    cu()
+    cur()
