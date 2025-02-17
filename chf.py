@@ -1,6 +1,7 @@
 """
 Converte franco suisso para dolar
 """
+
 import click
 
 

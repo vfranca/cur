@@ -1,6 +1,7 @@
 """
 Converte euro para dolar
 """
+
 import click
 
 
