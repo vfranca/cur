@@ -1,5 +1,5 @@
 from click.testing import CliRunner
-from cur import cur
+from cur.cur import cur
 
 run = CliRunner()
 

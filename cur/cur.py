@@ -3,16 +3,16 @@ Aplicativo CLI para conversão de moedas
 """
 
 import click
-from usd import usd
-from eur import eur
-from gbp import gbp
-from chf import chf
-from jpy import jpy
-from cad import cad
-from aud import aud
-from nzd import nzd
-from brl import brl
-from hkd import hkd
+from cur.usd import usd
+from cur.eur import eur
+from cur.gbp import gbp
+from cur.chf import chf
+from cur.jpy import jpy
+from cur.cad import cad
+from cur.aud import aud
+from cur.nzd import nzd
+from cur.brl import brl
+from cur.hkd import hkd
 
 
 @click.group()
