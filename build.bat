@@ -1,0 +1,1 @@
+@pyinstaller -y cur.spec
