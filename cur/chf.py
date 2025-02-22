@@ -1,5 +1,5 @@
 """
-Converte franco suisso para dolar
+Converte CHF para USD
 """
 
 import click
@@ -7,9 +7,9 @@ import click
 
 @click.command()
 @click.argument("preco", type=float)
-@click.option("--cambio", "-c", type=float, default=0.87)
+@click.option("--cambio", "-c", type=float, default=0.87, help="Taxa de conversao de CHF para USD")
 def chf(preco, cambio):
-    """Converte franco suisso para dolar."""
+    """Converte CHF para USD."""
     usd = preco * (1 / cambio)
     click.echo("%.2f USD" % usd)
 

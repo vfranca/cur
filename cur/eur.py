@@ -1,5 +1,5 @@
 """
-Converte euro para dolar
+Converte EUR para USD
 """
 
 import click
@@ -7,9 +7,9 @@ import click
 
 @click.command()
 @click.argument("preco", type=float)
-@click.option("--cambio", "-c", type=float, default=1.10)
+@click.option("--cambio", "-c", type=float, default=1.10, help="Taxa de conversao de EUR para USD")
 def eur(preco, cambio):
-    """Converte euro para dolar."""
+    """Converte EUR para USD."""
     usd = preco * cambio
     click.echo("%.2f USD" % usd)
 

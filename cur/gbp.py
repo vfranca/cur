@@ -1,5 +1,5 @@
 """
-Converte libra para dolar
+Converte GBP para USD
 """
 
 import click
@@ -7,9 +7,9 @@ import click
 
 @click.command()
 @click.argument("preco", type=float)
-@click.option("--cambio", "-c", type=float, default=1.283)
+@click.option("--cambio", "-c", type=float, default=1.283, help="Taxa de conversao de GBP para USD")
 def gbp(preco, cambio):
-    """Converte libra para dolar americano."""
+    """Converte GBP para USD."""
     usd = preco * cambio
     click.echo("%.2f USD" % usd)
 

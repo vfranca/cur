@@ -1,5 +1,5 @@
 """
-Converte dolar canadense para dolar
+Converte CAD para USD
 """
 
 import click
@@ -7,9 +7,9 @@ import click
 
 @click.command()
 @click.argument("preco", type=float)
-@click.option("--cambio", "-c", type=float, default=1.34)
+@click.option("--cambio", "-c", type=float, default=1.34, help="Taxa de conversao de CAD para USD")
 def cad(preco, cambio):
-    """Converte dolar canadense para dolar."""
+    """Converte CAD para USD."""
     usd = preco * (1 / cambio)
     click.echo("%.2f USD" % usd)
 

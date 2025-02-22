@@ -1,5 +1,5 @@
 """
-Converte dolar de hong kong para dolar
+Converte HKD para USD
 """
 
 import click
@@ -7,9 +7,9 @@ import click
 
 @click.command()
 @click.argument("preco", type=float)
-@click.option("--cambio", "-c", type=float, default=7.79)
+@click.option("--cambio", "-c", type=float, default=7.79, help="Taxa de conversao de HKD para USD")
 def hkd(preco, cambio):
-    """Converte dolar de hong kong para dolar."""
+    """Converte HKD para USD."""
     usd = preco * (1 / cambio)
     click.echo("%.2f USD" % usd)
 
